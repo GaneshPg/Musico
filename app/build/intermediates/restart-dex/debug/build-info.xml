@@ -4,27 +4,27 @@
     api-level="17"
     density="xhdpi"
     format="7"
-    timestamp="203089829260959"
+    timestamp="212460968768772"
     token="-5835807109782488929" >
 
     <task
         name="javac"
-        duration="4490" />
+        duration="3525" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="240" />
+        duration="275" />
     <task
         name="verifier"
-        duration="32" />
+        duration="51" />
 
     <artifact
         location="C:\Users\DELL\AndroidStudioProjects\Musico\app\build\outputs\apk\app-debug.apk"
         type="MAIN" />
 
-    <build timestamp="203089829260959" >
+    <build timestamp="212460968768772" >
         <artifact
             location="C:\Users\DELL\AndroidStudioProjects\Musico\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
