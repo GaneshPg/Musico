@@ -34,6 +34,13 @@ public class MainActivity extends Activity implements View.OnClickListener{
         setContentView(R.layout.activity_main);
 
         mMediaPlayer = new MediaPlayer();
+        mMediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mediaPlayer) {
+                nextSong();
+            }
+        });
+        
         mSongFiles = new ArrayList<>();
 
         getMusicFiles(Environment.getExternalStorageDirectory());
