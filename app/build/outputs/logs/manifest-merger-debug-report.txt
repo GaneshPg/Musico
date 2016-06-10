@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\DELL\AndroidStudioProjects\Musico\app\src\main\AndroidManifest.xml:2:1-24:12
+ADDED from C:\Users\DELL\AndroidStudioProjects\Musico\app\src\main\AndroidManifest.xml:2:1-38:12
 	package
 		ADDED from C:\Users\DELL\AndroidStudioProjects\Musico\app\src\main\AndroidManifest.xml:3:5-38
 		INJECTED from C:\Users\DELL\AndroidStudioProjects\Musico\app\src\main\AndroidManifest.xml
@@ -14,7 +14,7 @@ ADDED from C:\Users\DELL\AndroidStudioProjects\Musico\app\src\main\AndroidManife
 		INJECTED from C:\Users\DELL\AndroidStudioProjects\Musico\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\DELL\AndroidStudioProjects\Musico\app\src\main\AndroidManifest.xml
 application
-ADDED from C:\Users\DELL\AndroidStudioProjects\Musico\app\src\main\AndroidManifest.xml:5:5-22:19
+ADDED from C:\Users\DELL\AndroidStudioProjects\Musico\app\src\main\AndroidManifest.xml:5:5-36:19
 MERGED from [com.android.support:appcompat-v7:23.4.0] C:\Users\DELL\AndroidStudioProjects\Musico\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:animated-vector-drawable:23.4.0] C:\Users\DELL\AndroidStudioProjects\Musico\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\AndroidManifest.xml:7:5-20
 MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\DELL\AndroidStudioProjects\Musico\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\AndroidManifest.xml:7:5-20
@@ -24,6 +24,16 @@ MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\DELL\A
 MERGED from [com.android.support:support-v4:23.4.0] C:\Users\DELL\AndroidStudioProjects\Musico\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-appindexing:8.1.0] C:\Users\DELL\AndroidStudioProjects\Musico\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.1.0\AndroidManifest.xml:19:5-20
 MERGED from [com.google.android.gms:play-services-basement:8.1.0] C:\Users\DELL\AndroidStudioProjects\Musico\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:23.4.0] C:\Users\DELL\AndroidStudioProjects\Musico\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:23.4.0] C:\Users\DELL\AndroidStudioProjects\Musico\app\build\intermediates\exploded-aar\com.android.support\design\23.4.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.4.0] C:\Users\DELL\AndroidStudioProjects\Musico\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:23.4.0] C:\Users\DELL\AndroidStudioProjects\Musico\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] C:\Users\DELL\AndroidStudioProjects\Musico\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\DELL\AndroidStudioProjects\Musico\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.4.0] C:\Users\DELL\AndroidStudioProjects\Musico\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.4.0] C:\Users\DELL\AndroidStudioProjects\Musico\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\DELL\AndroidStudioProjects\Musico\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.4.0] C:\Users\DELL\AndroidStudioProjects\Musico\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:23.4.0] C:\Users\DELL\AndroidStudioProjects\Musico\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:22:5-20
 	android:label
 		ADDED from C:\Users\DELL\AndroidStudioProjects\Musico\app\src\main\AndroidManifest.xml:8:9-41
@@ -50,12 +60,20 @@ ADDED from C:\Users\DELL\AndroidStudioProjects\Musico\app\src\main\AndroidManife
 	android:name
 		ADDED from C:\Users\DELL\AndroidStudioProjects\Musico\app\src\main\AndroidManifest.xml:15:27-74
 meta-data#com.google.android.gms.version
-ADDED from C:\Users\DELL\AndroidStudioProjects\Musico\app\src\main\AndroidManifest.xml:19:9-21:69
+ADDED from C:\Users\DELL\AndroidStudioProjects\Musico\app\src\main\AndroidManifest.xml:22:9-24:69
 MERGED from [com.google.android.gms:play-services-basement:8.1.0] C:\Users\DELL\AndroidStudioProjects\Musico\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\AndroidManifest.xml:21:9-23:69
 	android:value
-		ADDED from C:\Users\DELL\AndroidStudioProjects\Musico\app\src\main\AndroidManifest.xml:21:13-66
+		ADDED from C:\Users\DELL\AndroidStudioProjects\Musico\app\src\main\AndroidManifest.xml:24:13-66
 	android:name
-		ADDED from C:\Users\DELL\AndroidStudioProjects\Musico\app\src\main\AndroidManifest.xml:20:13-58
+		ADDED from C:\Users\DELL\AndroidStudioProjects\Musico\app\src\main\AndroidManifest.xml:23:13-58
+activity#com.example.dell.musico.AllTracksListActivity
+ADDED from C:\Users\DELL\AndroidStudioProjects\Musico\app\src\main\AndroidManifest.xml:26:9-35:20
+	android:label
+		ADDED from C:\Users\DELL\AndroidStudioProjects\Musico\app\src\main\AndroidManifest.xml:28:13-67
+	android:theme
+		ADDED from C:\Users\DELL\AndroidStudioProjects\Musico\app\src\main\AndroidManifest.xml:29:13-56
+	android:name
+		ADDED from C:\Users\DELL\AndroidStudioProjects\Musico\app\src\main\AndroidManifest.xml:27:13-50
 uses-sdk
 INJECTED from C:\Users\DELL\AndroidStudioProjects\Musico\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:23.4.0] C:\Users\DELL\AndroidStudioProjects\Musico\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\AndroidManifest.xml:21:5-23:78
@@ -67,6 +85,17 @@ MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\DELL\A
 MERGED from [com.android.support:support-v4:23.4.0] C:\Users\DELL\AndroidStudioProjects\Musico\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:20:5-43
 MERGED from [com.google.android.gms:play-services-appindexing:8.1.0] C:\Users\DELL\AndroidStudioProjects\Musico\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.1.0\AndroidManifest.xml:18:5-42
 MERGED from [com.google.android.gms:play-services-basement:8.1.0] C:\Users\DELL\AndroidStudioProjects\Musico\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.1.0\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:23.4.0] C:\Users\DELL\AndroidStudioProjects\Musico\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:design:23.4.0] C:\Users\DELL\AndroidStudioProjects\Musico\app\build\intermediates\exploded-aar\com.android.support\design\23.4.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:23.4.0] C:\Users\DELL\AndroidStudioProjects\Musico\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.4.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.4.0] C:\Users\DELL\AndroidStudioProjects\Musico\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:23.4.0] C:\Users\DELL\AndroidStudioProjects\Musico\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:23.4.0] C:\Users\DELL\AndroidStudioProjects\Musico\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\DELL\AndroidStudioProjects\Musico\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:23.4.0] C:\Users\DELL\AndroidStudioProjects\Musico\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.4.0] C:\Users\DELL\AndroidStudioProjects\Musico\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\DELL\AndroidStudioProjects\Musico\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:23.4.0] C:\Users\DELL\AndroidStudioProjects\Musico\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:support-v4:23.4.0] C:\Users\DELL\AndroidStudioProjects\Musico\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\AndroidManifest.xml:20:5-43
 	tools:overrideLibrary
 		ADDED from [com.android.support:appcompat-v7:23.4.0] C:\Users\DELL\AndroidStudioProjects\Musico\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\AndroidManifest.xml:23:9-75

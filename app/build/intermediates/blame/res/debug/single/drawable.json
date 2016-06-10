@@ -16,12 +16,12 @@
         "source": "C:\\Users\\DELL\\AndroidStudioProjects\\Musico\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_btn_radio_material.xml"
     },
     {
-        "merged": "C:\\Users\\DELL\\AndroidStudioProjects\\Musico\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_track_material.xml",
-        "source": "C:\\Users\\DELL\\AndroidStudioProjects\\Musico\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_seekbar_track_material.xml"
-    },
-    {
         "merged": "C:\\Users\\DELL\\AndroidStudioProjects\\Musico\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
         "source": "C:\\Users\\DELL\\AndroidStudioProjects\\Musico\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_btn_check_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\DELL\\AndroidStudioProjects\\Musico\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_track_material.xml",
+        "source": "C:\\Users\\DELL\\AndroidStudioProjects\\Musico\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_seekbar_track_material.xml"
     },
     {
         "merged": "C:\\Users\\DELL\\AndroidStudioProjects\\Musico\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\forward.png",
@@ -76,6 +76,10 @@
         "source": "C:\\Users\\DELL\\AndroidStudioProjects\\Musico\\app\\src\\main\\res\\drawable\\backward.png"
     },
     {
+        "merged": "C:\\Users\\DELL\\AndroidStudioProjects\\Musico\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_snackbar_background.xml",
+        "source": "C:\\Users\\DELL\\AndroidStudioProjects\\Musico\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.4.0\\res\\drawable\\design_snackbar_background.xml"
+    },
+    {
         "merged": "C:\\Users\\DELL\\AndroidStudioProjects\\Musico\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
         "source": "C:\\Users\\DELL\\AndroidStudioProjects\\Musico\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_textfield_search_material.xml"
     },
@@ -102,6 +106,10 @@
     {
         "merged": "C:\\Users\\DELL\\AndroidStudioProjects\\Musico\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
         "source": "C:\\Users\\DELL\\AndroidStudioProjects\\Musico\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_tab_indicator_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\DELL\\AndroidStudioProjects\\Musico\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_fab_background.xml",
+        "source": "C:\\Users\\DELL\\AndroidStudioProjects\\Musico\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.4.0\\res\\drawable\\design_fab_background.xml"
     },
     {
         "merged": "C:\\Users\\DELL\\AndroidStudioProjects\\Musico\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",
