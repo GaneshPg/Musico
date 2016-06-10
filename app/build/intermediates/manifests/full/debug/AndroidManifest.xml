@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="15"
+        android:minSdkVersion="17"
         android:targetSdkVersion="23" />
 
     <application
@@ -14,7 +14,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.example.dell.musico.MainActivity" >
+        <activity android:name="com.example.dell.musico.PlayerFragment" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -29,16 +29,7 @@
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
-        <activity
-            android:name="com.example.dell.musico.AllTracksListActivity"
-            android:label="@string/title_activity_all_tracks_list"
-            android:theme="@style/AppTheme.NoActionBar" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name="com.example.dell.musico.MainActivity" />
     </application>
 
 </manifest>

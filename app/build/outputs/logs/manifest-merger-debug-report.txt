@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\DELL\AndroidStudioProjects\Musico\app\src\main\AndroidManifest.xml:2:1-38:12
+ADDED from C:\Users\DELL\AndroidStudioProjects\Musico\app\src\main\AndroidManifest.xml:2:1-29:12
 	package
 		ADDED from C:\Users\DELL\AndroidStudioProjects\Musico\app\src\main\AndroidManifest.xml:3:5-38
 		INJECTED from C:\Users\DELL\AndroidStudioProjects\Musico\app\src\main\AndroidManifest.xml
@@ -14,7 +14,7 @@ ADDED from C:\Users\DELL\AndroidStudioProjects\Musico\app\src\main\AndroidManife
 		INJECTED from C:\Users\DELL\AndroidStudioProjects\Musico\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\DELL\AndroidStudioProjects\Musico\app\src\main\AndroidManifest.xml
 application
-ADDED from C:\Users\DELL\AndroidStudioProjects\Musico\app\src\main\AndroidManifest.xml:5:5-36:19
+ADDED from C:\Users\DELL\AndroidStudioProjects\Musico\app\src\main\AndroidManifest.xml:5:5-27:19
 MERGED from [com.android.support:appcompat-v7:23.4.0] C:\Users\DELL\AndroidStudioProjects\Musico\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:animated-vector-drawable:23.4.0] C:\Users\DELL\AndroidStudioProjects\Musico\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\AndroidManifest.xml:7:5-20
 MERGED from [com.android.support:support-vector-drawable:23.4.0] C:\Users\DELL\AndroidStudioProjects\Musico\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\AndroidManifest.xml:7:5-20
@@ -45,10 +45,10 @@ MERGED from [com.android.support:support-v4:23.4.0] C:\Users\DELL\AndroidStudioP
 		ADDED from C:\Users\DELL\AndroidStudioProjects\Musico\app\src\main\AndroidManifest.xml:7:9-43
 	android:theme
 		ADDED from C:\Users\DELL\AndroidStudioProjects\Musico\app\src\main\AndroidManifest.xml:10:9-40
-activity#com.example.dell.musico.MainActivity
+activity#com.example.dell.musico.PlayerFragment
 ADDED from C:\Users\DELL\AndroidStudioProjects\Musico\app\src\main\AndroidManifest.xml:11:9-17:20
 	android:name
-		ADDED from C:\Users\DELL\AndroidStudioProjects\Musico\app\src\main\AndroidManifest.xml:11:19-47
+		ADDED from C:\Users\DELL\AndroidStudioProjects\Musico\app\src\main\AndroidManifest.xml:11:19-49
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
 ADDED from C:\Users\DELL\AndroidStudioProjects\Musico\app\src\main\AndroidManifest.xml:12:13-16:29
 action#android.intent.action.MAIN
@@ -66,14 +66,10 @@ MERGED from [com.google.android.gms:play-services-basement:8.1.0] C:\Users\DELL\
 		ADDED from C:\Users\DELL\AndroidStudioProjects\Musico\app\src\main\AndroidManifest.xml:24:13-66
 	android:name
 		ADDED from C:\Users\DELL\AndroidStudioProjects\Musico\app\src\main\AndroidManifest.xml:23:13-58
-activity#com.example.dell.musico.AllTracksListActivity
-ADDED from C:\Users\DELL\AndroidStudioProjects\Musico\app\src\main\AndroidManifest.xml:26:9-35:20
-	android:label
-		ADDED from C:\Users\DELL\AndroidStudioProjects\Musico\app\src\main\AndroidManifest.xml:28:13-67
-	android:theme
-		ADDED from C:\Users\DELL\AndroidStudioProjects\Musico\app\src\main\AndroidManifest.xml:29:13-56
+activity#com.example.dell.musico.MainActivity
+ADDED from C:\Users\DELL\AndroidStudioProjects\Musico\app\src\main\AndroidManifest.xml:26:9-59
 	android:name
-		ADDED from C:\Users\DELL\AndroidStudioProjects\Musico\app\src\main\AndroidManifest.xml:27:13-50
+		ADDED from C:\Users\DELL\AndroidStudioProjects\Musico\app\src\main\AndroidManifest.xml:26:19-47
 uses-sdk
 INJECTED from C:\Users\DELL\AndroidStudioProjects\Musico\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:23.4.0] C:\Users\DELL\AndroidStudioProjects\Musico\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\AndroidManifest.xml:21:5-23:78
