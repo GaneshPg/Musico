@@ -613,7 +613,7 @@ int id action_menu_presenter 0x7f0c0003
 int id action_mode_bar 0x7f0c0059
 int id action_mode_bar_stub 0x7f0c0058
 int id action_mode_close_button 0x7f0c003e
-int id action_settings 0x7f0c0088
+int id action_settings 0x7f0c008b
 int id activity_chooser_view_content 0x7f0c003f
 int id adjust_height 0x7f0c0033
 int id adjust_width 0x7f0c0034
@@ -644,6 +644,8 @@ int id design_menu_item_text 0x7f0c0072
 int id design_navigation_view 0x7f0c0071
 int id disableHome 0x7f0c000e
 int id edit_query 0x7f0c005e
+int id elementArtist 0x7f0c008a
+int id elementTitle 0x7f0c0089
 int id end 0x7f0c0021
 int id end_padder 0x7f0c0087
 int id enterAlways 0x7f0c0015
@@ -722,6 +724,7 @@ int id tabMode 0x7f0c000d
 int id text 0x7f0c0085
 int id text2 0x7f0c0083
 int id textSpacerNoButtons 0x7f0c004f
+int id thumbnail 0x7f0c0088
 int id time 0x7f0c0081
 int id title 0x7f0c0045
 int id title_template 0x7f0c004a
@@ -791,10 +794,11 @@ int layout notification_template_lines 0x7f04002c
 int layout notification_template_media 0x7f04002d
 int layout notification_template_part_chronometer 0x7f04002e
 int layout notification_template_part_time 0x7f04002f
-int layout select_dialog_item_material 0x7f040030
-int layout select_dialog_multichoice_material 0x7f040031
-int layout select_dialog_singlechoice_material 0x7f040032
-int layout support_simple_spinner_dropdown_item 0x7f040033
+int layout playlist_element 0x7f040030
+int layout select_dialog_item_material 0x7f040031
+int layout select_dialog_multichoice_material 0x7f040032
+int layout select_dialog_singlechoice_material 0x7f040033
+int layout support_simple_spinner_dropdown_item 0x7f040034
 int menu menu_all_tracks_list 0x7f0d0000
 int mipmap ic_launcher 0x7f030000
 int string abc_action_bar_home_description 0x7f060000

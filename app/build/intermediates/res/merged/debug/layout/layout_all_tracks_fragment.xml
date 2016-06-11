@@ -2,6 +2,9 @@
 <ListView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/tracksList">
+    android:id="@+id/tracksList"
+    android:divider="@android:color/holo_blue_light"
+    android:dividerHeight="2dp"
+    android:background="@android:color/darker_gray">
 
 </ListView>
