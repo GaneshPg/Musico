@@ -7,8 +7,6 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 
-import java.util.HashMap;
-
 public class MainActivity extends FragmentActivity {
 
     private ViewPager mViewPager;
@@ -18,8 +16,28 @@ public class MainActivity extends FragmentActivity {
         setContentView(R.layout.activity_main);
 
         mViewPager = (ViewPager) findViewById(R.id.viewPager);
-        mViewPager.setAdapter(new CustomPagerAdapter(getSupportFragmentManager()));
 
+        final CustomPagerAdapter customPagerAdapter = new CustomPagerAdapter(getSupportFragmentManager());
+
+        mViewPager.setAdapter(customPagerAdapter);
+        mViewPager.setOffscreenPageLimit(2);
+        mViewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+            @Override
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+
+            }
+
+            @Override
+            public void onPageSelected(int position) {
+                if (position == 0)
+                    PlayerFragment.getPLAYERFRAGMENT().reselect();
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int state) {
+
+            }
+        });
     }
 
     private class CustomPagerAdapter extends FragmentPagerAdapter {
@@ -30,7 +48,7 @@ public class MainActivity extends FragmentActivity {
         /**
          * Return the Fragment associated with a specified position.
          *
-         * @param position
+         * @param position - position of the fragment in the swipe view
          */
         @Override
         public Fragment getItem(int position) {

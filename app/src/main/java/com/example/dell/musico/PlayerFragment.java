@@ -24,10 +24,12 @@ public class PlayerFragment extends Fragment implements View.OnClickListener{
 
     private ImageView mPlayBtn, mNextBtn, mPrevBtn, mAlbumArt;
     private TextView mSongInfo;
-    private MediaPlayer mMediaPlayer;
-    private int mSongIndex;
 
-    public static ArrayList<HashMap<String,String>> METADATALIST = new ArrayList<>();
+    public static PlayerFragment PLAYERFRAGMENT;
+
+    public int mSongIndex = 0;
+    public ArrayList<HashMap<String,String>> mMetaDataList = new ArrayList<>();
+    public MediaPlayer mMediaPlayer = new MediaPlayer();
 
     private static final String TAG = "Player Fragment";
     
@@ -36,14 +38,18 @@ public class PlayerFragment extends Fragment implements View.OnClickListener{
     public static PlayerFragment createInstance(){
         PlayerFragment fragment = new PlayerFragment();
         fragment.setArguments(null);
+        PLAYERFRAGMENT = fragment;
         return fragment;
+    }
+
+    public static PlayerFragment getPLAYERFRAGMENT(){
+        return PLAYERFRAGMENT;
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         v = inflater.inflate(R.layout.layout_player_fragment,container,false);
 
-        mMediaPlayer = new MediaPlayer();
         mMediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
             public void onCompletion(MediaPlayer mediaPlayer) {
@@ -53,7 +59,7 @@ public class PlayerFragment extends Fragment implements View.OnClickListener{
 
         getMusicFiles(Environment.getExternalStorageDirectory());
 
-        mSongIndex = METADATALIST.isEmpty()? -1:0;
+        mSongIndex = mMetaDataList.isEmpty()? -1:mSongIndex;
 
         mPlayBtn = (ImageView) v.findViewById(R.id.playPauseButton);
         mNextBtn = (ImageView) v.findViewById(R.id.nextButton);
@@ -66,11 +72,10 @@ public class PlayerFragment extends Fragment implements View.OnClickListener{
         mNextBtn.setOnClickListener(this);
         mPrevBtn.setOnClickListener(this);
 
-        if(METADATALIST.isEmpty()) Toast.makeText(this.getContext(),"No audio files found!",Toast.LENGTH_LONG).show();
+        if(mMetaDataList.isEmpty()) Toast.makeText(this.getContext(),"No audio files found!",Toast.LENGTH_LONG).show();
         else {
-            Toast.makeText(this.getContext(),METADATALIST.size()+" audio files found!",Toast.LENGTH_LONG).show();
             try {
-                mMediaPlayer.setDataSource(METADATALIST.get(mSongIndex).get("filepath"));
+                mMediaPlayer.setDataSource(mMetaDataList.get(mSongIndex).get("filepath"));
                 mMediaPlayer.prepare();
             } catch (IOException e) {
                 Log.d(TAG,"MediaPlayer error " + e.getMessage());
@@ -80,6 +85,24 @@ public class PlayerFragment extends Fragment implements View.OnClickListener{
         }
         
         return v;
+    }
+
+    public void reselect() {
+        //onCreateView(getActivity().getLayoutInflater(),null,null);
+
+        /*mPlayBtn = (ImageView) v.findViewById(R.id.playPauseButton);
+        mNextBtn = (ImageView) v.findViewById(R.id.nextButton);
+        mPrevBtn = (ImageView) v.findViewById(R.id.prevButton);
+        mAlbumArt = (ImageView) v.findViewById(R.id.albumArt);
+
+        mSongInfo = (TextView) v.findViewById(R.id.songInfo);*/
+
+        if(mMediaPlayer.isPlaying())
+            mPlayBtn.setImageResource(R.drawable.pause);
+        else
+            mPlayBtn.setImageResource(R.drawable.play);
+
+        showSongInfo();
     }
 
     @Override
@@ -102,10 +125,10 @@ public class PlayerFragment extends Fragment implements View.OnClickListener{
 
     public void showSongInfo(){
 
-        String title = METADATALIST.get(mSongIndex).get("title");
-        String artist = METADATALIST.get(mSongIndex).get("artist");
-        String album = METADATALIST.get(mSongIndex).get("album");
-        String duration = METADATALIST.get(mSongIndex).get("duration");
+        String title = mMetaDataList.get(mSongIndex).get("title");
+        String artist = mMetaDataList.get(mSongIndex).get("artist");
+        String album = mMetaDataList.get(mSongIndex).get("album");
+        String duration = mMetaDataList.get(mSongIndex).get("duration");
 
         title += "\n";
 
@@ -116,7 +139,7 @@ public class PlayerFragment extends Fragment implements View.OnClickListener{
         mSongInfo.setText(infoText);
 
         MediaMetadataRetriever metadataRetriever = new MediaMetadataRetriever();
-        metadataRetriever.setDataSource(METADATALIST.get(mSongIndex).get("filepath"));
+        metadataRetriever.setDataSource(mMetaDataList.get(mSongIndex).get("filepath"));
         byte[] bytearray = metadataRetriever.getEmbeddedPicture();
 
         try{
@@ -128,7 +151,7 @@ public class PlayerFragment extends Fragment implements View.OnClickListener{
     }
 
     public void playPause(){
-        if(METADATALIST.isEmpty()){
+        if(mMetaDataList.isEmpty()){
             Toast.makeText(this.getContext(),"No files to play!",Toast.LENGTH_LONG).show();
             return;
         }
@@ -143,21 +166,34 @@ public class PlayerFragment extends Fragment implements View.OnClickListener{
         }
     }
 
+    public void playSong(int songNumber){
+        try {
+            mMediaPlayer.reset();
+            mMediaPlayer.setDataSource(mMetaDataList.get(songNumber).get("filepath"));
+            mMediaPlayer.prepare();
+            mMediaPlayer.start();
+            mSongIndex = songNumber;
+        } catch (IOException e) {
+            Log.d(TAG,"MediaPlayer error " + e.getMessage());
+            Toast.makeText(getContext(),"Some error occurred. Try again!",Toast.LENGTH_LONG).show();
+        }
+    }
+
     public void nextSong(){
 
-        if(METADATALIST.isEmpty()){
+        if(mMetaDataList.isEmpty()){
             Toast.makeText(this.getContext(),"No files to play!",Toast.LENGTH_LONG).show();
             return;
         }
 
-        mSongIndex = (mSongIndex + 1) % METADATALIST.size();
+        mSongIndex = (mSongIndex + 1) % mMetaDataList.size();
 
         boolean isPlaying = mMediaPlayer.isPlaying();
 
         mMediaPlayer.stop();
         mMediaPlayer.reset();
         try {
-            mMediaPlayer.setDataSource(METADATALIST.get(mSongIndex).get("filepath"));
+            mMediaPlayer.setDataSource(mMetaDataList.get(mSongIndex).get("filepath"));
             mMediaPlayer.prepare();
         } catch (IOException e) {
             Log.d(TAG,"MediaPlayer error " + e.getMessage());
@@ -171,13 +207,13 @@ public class PlayerFragment extends Fragment implements View.OnClickListener{
 
     public void prevSong(){
 
-        if(METADATALIST.isEmpty()){
+        if(mMetaDataList.isEmpty()){
             Toast.makeText(this.getContext(),"No files to play!",Toast.LENGTH_LONG).show();
             return;
         }
 
         if(mSongIndex == 0)
-            mSongIndex = METADATALIST.size();
+            mSongIndex = mMetaDataList.size();
 
         mSongIndex--;
 
@@ -186,7 +222,7 @@ public class PlayerFragment extends Fragment implements View.OnClickListener{
         mMediaPlayer.stop();
         mMediaPlayer.reset();
         try {
-            mMediaPlayer.setDataSource(METADATALIST.get(mSongIndex).get("filepath"));
+            mMediaPlayer.setDataSource(mMetaDataList.get(mSongIndex).get("filepath"));
             mMediaPlayer.prepare();
         } catch (IOException e) {
             Log.d(TAG,"MediaPlayer error " + e.getMessage());
@@ -208,7 +244,7 @@ public class PlayerFragment extends Fragment implements View.OnClickListener{
                     getMusicFiles(file);
                 else if (file.isFile() && file.getName().endsWith(".mp3") || file.getName().endsWith(".wav")) {
 
-                    HashMap<String,String> metadata = new HashMap<String, String>();
+                    HashMap<String,String> metadata = new HashMap<>();
 
                     MediaMetadataRetriever metadataRetriever = new MediaMetadataRetriever();
                     metadataRetriever.setDataSource(file.getPath());
@@ -235,7 +271,7 @@ public class PlayerFragment extends Fragment implements View.OnClickListener{
                     metadata.put("duration",duration);
                     metadata.put("filepath",file.getPath());
 
-                    METADATALIST.add(metadata);
+                    mMetaDataList.add(metadata);
                 }
             }
         }
