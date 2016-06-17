@@ -67,12 +67,6 @@ public class AllTracksFragment extends Fragment {
         }
 
         @Override
-        public int getViewTypeCount() {
-
-            return mData.size();
-        }
-
-        @Override
         public int getItemViewType(int position) {
 
             return position;
@@ -94,7 +88,7 @@ public class AllTracksFragment extends Fragment {
         }
 
         @Override
-        public View getView(int i, View view, ViewGroup viewGroup) {
+        public View getView(int position, View view, ViewGroup viewGroup) {
             View eltview = view;
             if (view == null) {
                 eltview = inflater.inflate(R.layout.playlist_element,null);
@@ -104,23 +98,23 @@ public class AllTracksFragment extends Fragment {
                 TextView artist = (TextView) eltview.findViewById(R.id.elementArtist);
 
                 MediaMetadataRetriever metadataRetriever = new MediaMetadataRetriever();
-                metadataRetriever.setDataSource(mData.get(i).get("filepath"));
-                byte[] bytearray = metadataRetriever.getEmbeddedPicture();
+                metadataRetriever.setDataSource(mData.get(position).get("filepath"));
 
                 try {
+                    byte[] bytearray = metadataRetriever.getEmbeddedPicture();
                     Bitmap albumArt = BitmapFactory.decodeByteArray(bytearray, 0, bytearray.length);
                     thumbnail.setImageBitmap(albumArt);
                 } catch (Exception e) {
                     thumbnail.setImageResource(R.drawable.play);
                 }
 
-                title.setText(mData.get(i).get("title"));
+                title.setText(mData.get(position).get("title"));
 
                 String artistString = "Artist : ";
-                if (mData.get(i).get("artist").isEmpty())
+                if (mData.get(position).get("artist").isEmpty())
                     artistString += "Unknown";
                 else
-                    artistString += mData.get(i).get("artist");
+                    artistString += mData.get(position).get("artist");
 
                 artist.setText(artistString);
 

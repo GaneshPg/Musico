@@ -1,6 +1,3 @@
-CHANGED,C:\Users\DELL\AndroidStudioProjects\Musico\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\dell\musico\AllTracksFragment$override.class
-CHANGED,C:\Users\DELL\AndroidStudioProjects\Musico\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\dell\musico\AllTracksFragment$1$override.class
 CHANGED,C:\Users\DELL\AndroidStudioProjects\Musico\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\dell\musico\AllTracksFragment$CustomAdapter$override.class
 CHANGED,C:\Users\DELL\AndroidStudioProjects\Musico\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\android\tools\fd\runtime\AppPatchesLoaderImpl.class
 CHANGED,C:\Users\DELL\AndroidStudioProjects\Musico\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\dell\musico\PlayerFragment$override.class
-CHANGED,C:\Users\DELL\AndroidStudioProjects\Musico\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\dell\musico\MainActivity$1$override.class

@@ -88,14 +88,6 @@ public class PlayerFragment extends Fragment implements View.OnClickListener{
     }
 
     public void reselect() {
-        //onCreateView(getActivity().getLayoutInflater(),null,null);
-
-        /*mPlayBtn = (ImageView) v.findViewById(R.id.playPauseButton);
-        mNextBtn = (ImageView) v.findViewById(R.id.nextButton);
-        mPrevBtn = (ImageView) v.findViewById(R.id.prevButton);
-        mAlbumArt = (ImageView) v.findViewById(R.id.albumArt);
-
-        mSongInfo = (TextView) v.findViewById(R.id.songInfo);*/
 
         if(mMediaPlayer.isPlaying())
             mPlayBtn.setImageResource(R.drawable.pause);
@@ -140,9 +132,9 @@ public class PlayerFragment extends Fragment implements View.OnClickListener{
 
         MediaMetadataRetriever metadataRetriever = new MediaMetadataRetriever();
         metadataRetriever.setDataSource(mMetaDataList.get(mSongIndex).get("filepath"));
-        byte[] bytearray = metadataRetriever.getEmbeddedPicture();
 
         try{
+            byte[] bytearray = metadataRetriever.getEmbeddedPicture();
             Bitmap albumArt = BitmapFactory.decodeByteArray(bytearray,0,bytearray.length);
             mAlbumArt.setImageBitmap(albumArt);
         }catch (Exception e){
