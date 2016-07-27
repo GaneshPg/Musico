@@ -41,13 +41,13 @@ public class AllTracksFragment extends Fragment {
         v = inflater.inflate(R.layout.layout_all_tracks_fragment, container, false);
 
         trackList = (ListView) v.findViewById(R.id.tracksList);
-        CustomAdapter customAdapter = new CustomAdapter(getContext(), PlayerFragment.getPLAYERFRAGMENT().mMetaDataList);
-        trackList.setAdapter(customAdapter);
+        //CustomAdapter customAdapter = new CustomAdapter(getContext(), PlayerFragment.getPLAYERFRAGMENT().mMetaDataList);
+        //trackList.setAdapter(customAdapter);
 
         trackList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-                PlayerFragment.getPLAYERFRAGMENT().playSong(position);
+                //PlayerFragment.getPLAYERFRAGMENT().playSong(position);
             }
         });
 

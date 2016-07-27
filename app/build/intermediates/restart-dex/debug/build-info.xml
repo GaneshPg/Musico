@@ -1,30 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="armeabi-v7a,armeabi"
-    api-level="22"
-    density="hdpi"
+    abi="x86,armeabi-v7a"
+    api-level="17"
+    density="xhdpi"
     format="7"
-    timestamp="43259004011946"
-    token="6695114553381230283" >
+    timestamp="304708852714025"
+    token="-5835807109782488929" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="5380" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="765" />
     <task
         name="verifier"
-        duration="0" />
+        duration="8" />
 
-    <build timestamp="43076883024213" >
+    <artifact
+        location="C:\Users\DELL\AndroidStudioProjects\Musico\app\build\outputs\apk\app-debug.apk"
+        type="MAIN" />
+
+    <build timestamp="304708852714025" >
         <artifact
-            location="C:\Users\Sandeep\Documents\GitHub\Musico\app\build\outputs\apk\app-debug.apk"
+            location="C:\Users\DELL\AndroidStudioProjects\Musico\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
     </build>
-    <build timestamp="43259004011946" />
 
 </instant-run>
